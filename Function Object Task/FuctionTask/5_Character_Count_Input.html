@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5️⃣ Character Counter</title>
+</head>
+
+<body>
+    <div>
+
+        <h1>5️⃣ Character Counter </h1>
+
+        <div>
+            <input type="text" id="text" oninput="countChars()">
+            <p>Length: <span id="len">0</span></p>
+        </div>
+
+
+    </div>
+    <script>
+
+        const countChars = () => {
+            const text = document.getElementById("text")
+            // debugger
+            document.getElementById("len").innerText = text.value.length;
+        }
+
+
+        /*
+        3️⃣ text.value
+         .value gets whatever the user typed in that input box.
+          Example:
+         If you typed Hello, then text.value = "Hello".
+
+
+         4️⃣ text.value.length
+           .length gives the number of characters in the string.
+           Example:
+           "Hello".length → 5.
+
+          5️⃣ document.getElementById("len").innerText = text.value.length;
+           This finds another element with the ID "len" — usually a place where you show the result.
+
+
+        */
+
+
+    </script>
+</body>
+
+</html>

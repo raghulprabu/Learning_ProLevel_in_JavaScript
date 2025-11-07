@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9️⃣ Calculator</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1> 9️⃣ Calculator</h1>
+        </div>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button onclick="added()"> add + </button>
+        <button onclick="sub()"> sub - </button>
+        <h1 id="result"></h1>
+    </div>
+
+    <script>
+
+        const added = () =>{
+            let a = Number(document.getElementById("num1").value)
+            let b = Number(document.getElementById("num2").value)
+            document.getElementById("result").innerHTML = a+b 
+
+        }
+        const sub= () =>{
+            let a = Number(document.getElementById("num1").value)
+            let b = Number(document.getElementById("num2").value)
+            document.getElementById("result").innerHTML = a-b 
+
+        }
+         
+
+    </script>
+</body>
+</html>

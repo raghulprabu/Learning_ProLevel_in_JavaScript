@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+        <h1> 12️⃣ Quiz App (Single Question)</h1>
+
+        <h1 id="question"> 2+2</h1>
+        <button onclick="correct(3)"> answer 3</button>
+        <button onclick="correct(4)"> Answer  4 </button>
+        <h2 id="answer"></h2>
+
+    </div>
+    <script>
+        const correct = (a) =>{
+            if( a === 4){
+              document.getElementById("answer").innerHTML="<h1 style='color: green;'>Correct 🎉 </h1>"
+            }else{
+             document.getElementById("answer").innerHTML="<h1 style='color: red;'> Wrong 😢 </h1>" 
+            }
+        }
+    </script>
+</body>
+</html>

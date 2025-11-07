@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8️⃣ Filter Product List</title>
+</head>
+<body>
+  <div>
+    <h1>8️⃣ Filter Product List</h1>
+
+    <input type="text" id="search" placeholder="Search product...">
+    <button onclick="products()">Click button!</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    // Product list
+    const product = ["Laptop", "Mobile", "Tablet", "Camera"];
+
+    const products = () => {
+
+
+      // 1️⃣ Get input value
+      const searchkey = document.getElementById("search").value.toLowerCase();
+     //  The .value property gives you whatever the user typed inside the input box.
+     //  .toLowerCase()This is a string method that converts all letters to lowercase.
+
+       debugger
+      // 2️⃣ Clear previous results
+      document.getElementById("result").innerHTML = "";
+
+
+      debugger
+      // 3️⃣ Filter matching products
+      const Productresult = product.filter(item =>
+        item.toLowerCase().includes(searchkey)
+      );
+         debugger
+      // 4️⃣ Show results
+      if (Productresult.length === 0) {
+        document.getElementById("result").innerHTML = "<p>No products found</p>";
+      }else {
+        Productresult.map(item => {
+          document.getElementById("result").innerHTML = `<h3>${item}</h3>`;
+        });
+      }
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11️⃣ Form Validation</title>
+</head>
+<body>
+    <div>
+        <h1>11️⃣ Form Validation</h1>
+
+        <div>
+            <input id="email" placeholder="Enter the mail " >
+            <button onclick="validates()"> Submit</button>
+            <h1 id="msg" style="color: red;"></h1>
+        </div>
+
+    </div>
+    <script>
+
+        const validates = () =>{
+            const email =  document.getElementById("email").value 
+            const valid = email.includes("@") && email.includes(".")
+            if(valid){
+            document.getElementById("msg").innerHTML = "<h1 style='color: green;'>Valid Email ✅</h1>";
+            }
+            else{
+             document.getElementById("msg").innerHTML = "<h1 style='color: red;'>❌ Invalid Email</h1>";
+
+            }
+        }
+
+
+        // document.getElementById("msg").innerText = 
+            // valid ? "Valid Email ✅" : "Invalid ❌";
+
+    </script>
+</body>
+</html>
