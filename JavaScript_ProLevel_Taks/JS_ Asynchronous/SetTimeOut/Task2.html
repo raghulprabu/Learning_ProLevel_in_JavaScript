@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SetTime Out </title>
+</head>
+<body>
+    <div>
+        <h1> Time task </h1>
+        <button onclick="chnages()">Click Me</button>
+        <p id="output"></p>
+    </div>
+
+
+    <script>
+        
+        const chnages = () =>{
+            document.getElementById("output").innerHTML="pleases wait .."
+            setTimeout(() => {
+                document.getElementById("output").innerHTML="💥 data is loaded"       
+            }, 3000);
+        }
+    </script>
+    
+</body>
+</html>
