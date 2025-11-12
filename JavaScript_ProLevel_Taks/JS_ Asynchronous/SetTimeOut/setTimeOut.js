@@ -7,7 +7,7 @@ setTimeout(() => {
 
 
 setTimeout(() => {
-      document.getElementById("messag").style.display = "none";
+    document.getElementById("messag").style.display = "none";
 }, 3000);
 
 
@@ -22,8 +22,8 @@ setTimeout(() => {
         setTimeout(() => {
 
             console.log("start program")
-            
+
         }, 1000);
-        
+
     }, 2000);
-},3000);
+}, 3000);
