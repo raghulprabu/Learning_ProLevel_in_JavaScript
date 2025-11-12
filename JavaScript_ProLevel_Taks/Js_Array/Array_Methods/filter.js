@@ -1,3 +1,7 @@
+//&. The filter() method creates a new array with all elements that pass the condition return is true  provided in a callback function.
+//  Returns a new array containing only elements where the test returns true
+//  Does not change the original array
+
 const numbers = [1, 2, 3, 4, 5];
 const multip = numbers.filter(n => n >= 3);
 console.log(multip);

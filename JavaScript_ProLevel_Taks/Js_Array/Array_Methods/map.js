@@ -1,3 +1,8 @@
+// ^ The map() method creates a new array by transforming each element of the original array using a provided callback function.
+// Used to modify or transform data
+// Always returns a new array
+
+
 const nums = [1, 2, 3, 4, 5];
 const multiple = nums.map(nums => nums * 2)
 console.log("multiple the number ",multiple)

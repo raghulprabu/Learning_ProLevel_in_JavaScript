@@ -1,3 +1,8 @@
+//* The reduce() method executes a reducer function on each element of the array to accumulate it into a single result (value).
+// accumulator → stores the result of previous operations
+// Returns a single value (number, string, object, etc.)
+
+
 const numbers = [1, 2, 3, 4];
 const total = numbers.reduce((sum, n) => sum + n, 0);
 console.log("values ",total); // 10

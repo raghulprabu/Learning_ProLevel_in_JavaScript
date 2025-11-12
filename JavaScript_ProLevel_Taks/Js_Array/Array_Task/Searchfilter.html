@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Filter </title>
+</head>
+
+<body>
+    <div>
+        <dia>
+            <h1> 🔍 Search the Filter </h1>
+        </dia>
+        <div>
+            <input id="search" type="text" placeholder="  ⚙️ Search here the value ">
+            <button onclick="searchItems()">Search</button>
+            <h1 id="result"></h1>
+        </div>
+
+        <div>
+            <input type="text" id="searchs" placeholder=" ⚙️ Type to search...">
+            <h1 id="results"></h1>
+        </div>
+    </div>
+    <script>
+
+
+
+        const data = ["laptop", "keyboard", "mouse", "monitior"]
+        const searchItems = () => {
+            const searchInput = document.getElementById("search").value.toLowerCase();
+            const getting = data.filter(data => data.toLowerCase().includes(searchInput));
+            document.getElementById("result").innerHTML = getting.join("<br>");
+        }
+
+        // const searchItem = () => {
+        // const searchInputs = document.getElementById("searchs").value.toLowerCase();
+        //  const gettings = data.filter(data => data.toLowerCase().includes(searchInputs));
+        //   document.getElementById("results").innerHTML = gettings.join("<br>");
+        //    };
+        // document.getElementById("searchs").addEventListener("input", searchItem);
+
+
+        const searchItem = () => {
+            debugger
+            const searchInputs = document.getElementById("searchs").value.toLowerCase();
+            debugger
+            const gettings = data.filter(data => data.toLowerCase().includes(searchInputs));
+            debugger
+            if (searchInputs.trim() === "") {
+                document.getElementById("results").innerHTML = "<p> 🥺 No products found</p>";
+                debugger
+            }else {
+                document.getElementById("results").innerHTML = gettings.join("<br>");
+            }
+
+            // document.getElementById("results").innerHTML = searchInputs.trim() === "" ? "" : gettings.join("<br>");
+
+        };
+        debugger
+        document.getElementById("searchs").addEventListener("input", searchItem);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
