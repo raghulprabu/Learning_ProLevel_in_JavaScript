@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 3. EVENT LISTENERS (addEventListener)</title>
+</head>
+
+<body>
+    <div>
+        <h1>🔥 3. EVENT LISTENERS (addEventListener)</h1>
+        <div id="box" style="width:100px;height:100px;background:gray"></div>
+        <button id="btn">Make Red</button>
+
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+            document.getElementById("box").style.background = "red";
+        });
+
+    </script>
+
+</body>
+
+</html>
