@@ -15,15 +15,10 @@ setTimeout(() => {
 
 setTimeout(() => {
     console.log("hello Raghul")
-
     setTimeout(() => {
         console.log(" good sources")
-
         setTimeout(() => {
-
             console.log("start program")
-
         }, 1000);
-
     }, 2000);
 }, 3000);

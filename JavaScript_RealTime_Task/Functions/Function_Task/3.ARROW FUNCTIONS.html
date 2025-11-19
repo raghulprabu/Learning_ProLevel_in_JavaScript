@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROW FUNCTIONS</title>
+</head>
+
+<body>
+    <div>
+        <h1>ARROW FUNCTIONS</h1>
+        <input id="sum" type="number" placeholder="Enter number" />
+        <button onclick="showSquare()">Find Square</button>
+        <h1 id="result"></h1>
+    </div>
+
+<script>
+    const square = (n) => n * n
+
+    function showSquare() {
+        const value = document.getElementById("sum").value
+        document.getElementById("result").innerHTML = square(value)
+        
+    }
+
+    
+</script>
+
+</body>
+
+</html>
