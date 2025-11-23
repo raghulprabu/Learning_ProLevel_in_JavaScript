@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 async/await</title>
+</head>
+
+<body>
+    <div>
+        <h1>🔥 async/await</h1>
+        <button id="btn">Load Data</button>
+        <h1 id="msg"></h1>
+
+    </div>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", loadData);
+
+        async function loadData() {
+            document.getElementById("msg").innerText = "Loading...";
+
+            // wait for 2 seconds
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            document.getElementById("msg").innerText = "Data Loaded Successfully!";
+        }
+
+    </script>
+
+</body>
+
+</html>
